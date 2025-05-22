@@ -6,9 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-black text-white min-h-screen flex flex-col">
+  <body
+    class="bg-black w-full text-white min-h-screen flex flex-col flex-wrap m-0 p-0 box-border"
+  >
     <div
-      class="w-full bg-white text-black text-center text-6xl font-mono font-bold py-2"
+      class="bg-white w-full text-black text-center text-6xl font-mono font-bold py-2"
     >
       TIC-TAC-TOE
     </div>
@@ -20,14 +22,14 @@
             class="border-2 border-white rounded-2xl text-center font-bold"
             id="player1"
             type="text"
-            placeholder="Player1"
+            placeholder="Enter Name"
           />
           <p id="score1">Score : 0</p>
         </div>
         <button
           id="start"
           type="button"
-          class="bg-green-500 h-fit self-center w-32 font-bold border-2 border-gray-800 hover:cursor-pointer hover:bg-green-300 px-4 rounded-2xl text-2xl"
+          class="bg-green-500 h-fit self-center w-32 font-bold border-2 border-gray-800 hover:cursor-pointer hover:bg-green-400 px-4 rounded-2xl text-2xl"
         >
           Restart
         </button>
@@ -37,7 +39,7 @@
             class="border-2 border-white rounded-2xl text-center"
             id="player2"
             type="text"
-            placeholder="Player 2"
+            placeholder="Enter Name"
           />
           <p id="score2">Score : 0</p>
         </div>

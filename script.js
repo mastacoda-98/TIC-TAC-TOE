@@ -121,4 +121,32 @@ grid.addEventListener("click", function (e) {
       mark = "X";
     }, 2000);
   }
+  if (draw(game.board)) {
+    info.innerText = "Draw!";
+    grid.style.pointerEvents = "none";
+    setTimeout(() => {
+      info.innerText = `${player1.value} turn...`;
+      grid.style.pointerEvents = "auto";
+      game.board = Board();
+      for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+          const cell = document.querySelector(
+            `[data-row="${i}"][data-col="${j}"]`
+          );
+          cell.innerText = "";
+        }
+      }
+      mark = "X";
+    }, 2000);
+  }
 });
+function draw(board) {
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+      if (game.board[i][j] === "") {
+        return false;
+      }
+    }
+  }
+  return true;
+}
