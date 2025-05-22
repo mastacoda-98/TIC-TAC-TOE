@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-black text-white min-h-screen flex flex-col">
+    <div
+      class="w-full bg-white text-black text-center text-6xl font-mono font-bold py-2"
+    >
+      TIC-TAC-TOE
+    </div>
+    <div class="h-[8em] pt-4">
+      <div class="flex justify-around">
+        <div class="flex flex-col items-center justify-center gap-1">
+          <label for="player1">Player 1</label>
+          <input
+            class="border-2 border-white rounded-2xl text-center font-bold"
+            id="player1"
+            type="text"
+            placeholder="Player1"
+          />
+          <p id="score1">Score : 0</p>
+        </div>
+        <button
+          id="start"
+          type="button"
+          class="bg-green-500 h-fit self-center w-32 font-bold border-2 border-gray-800 hover:cursor-pointer hover:bg-green-300 px-4 rounded-2xl text-2xl"
+        >
+          Restart
+        </button>
+        <div class="flex flex-col items-center gap-1 font-bold">
+          <label for="player2">Player 2</label>
+          <input
+            class="border-2 border-white rounded-2xl text-center"
+            id="player2"
+            type="text"
+            placeholder="Player 2"
+          />
+          <p id="score2">Score : 0</p>
+        </div>
+      </div>
+    </div>
+    <p class="font-mono font-bold text-3xl text-center" id="status">
+      Player 1 turn...
+    </p>
+    <div
+      class="h-[550px] w-[550px] self-center mt-24 bg-red-500 flex-wrap flex justify-between gap-y-[20px]"
+      id="cells"
+    >
+      <div
+        class="h-[170px] w-[170px] bg-black text-9xl text-center pt-4 hover:cursor-pointer"
+        data-row="0"
+        data-col="0"
+      ></div>
+      <div
+        class="h-[170px] w-[170px] bg-black text-9xl text-center pt-4 hover:cursor-pointer"
+        data-row="0"
+        data-col="1"
+      ></div>
+      <div
+        class="h-[170px] w-[170px] bg-black text-9xl text-center pt-4 hover:cursor-pointer"
+        data-row="0"
+        data-col="2"
+      ></div>
+      <div
+        class="h-[170px] w-[170px] bg-black text-9xl text-center pt-4 hover:cursor-pointer"
+        data-row="1"
+        data-col="0"
+      ></div>
+      <div
+        class="h-[170px] w-[170px] bg-black text-9xl text-center pt-4 hover:cursor-pointer"
+        data-row="1"
+        data-col="1"
+      ></div>
+      <div
+        class="h-[170px] w-[170px] bg-black text-9xl text-center pt-4 hover:cursor-pointer"
+        data-row="1"
+        data-col="2"
+      ></div>
+      <div
+        class="h-[170px] w-[170px] bg-black text-9xl text-center pt-4 hover:cursor-pointer"
+        data-row="2"
+        data-col="0"
+      ></div>
+      <div
+        class="h-[170px] w-[170px] bg-black text-9xl text-center pt-4 hover:cursor-pointer"
+        data-row="2"
+        data-col="1"
+      ></div>
+      <div
+        class="h-[170px] w-[170px] bg-black text-9xl text-center pt-4 hover:cursor-pointer"
+        data-row="2"
+        data-col="2"
+      ></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
